@@ -27,6 +27,8 @@
 #apt_keys:
 
 # A list of Apt repositories. Each item is a dict with the following keys:
+# * name: the <name>.sources filename part. Optional. Default is 'kayobe' and
+#   the default filename is 'kayobe.sources'.
 # * types: whitespace-separated list of repository types, e.g. deb or deb-src
 #   (optional, default is 'deb')
 # * url: URL of the repository
@@ -50,8 +52,6 @@
 # * machine: 'machine' entry in the auth file
 # * login: 'login' entry in the auth file
 # * password: 'password' entry in the auth file
-# * filename: Name of a file in which to store the auth configuration. The
-#   extension should be '.conf'.
 # * filename: Name of a file in /etc/apt/auth.conf.d in which to store
 #   the auth configuration. The extension should be ``.conf``.
 # Default is an empty list.
